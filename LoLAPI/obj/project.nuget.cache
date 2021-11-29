@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ad/8DIS4ZH+20uUfQjRoYlVumuYiYUwNsvkP3VJBnmFV6LScXIeRk7jbIxr1+fycXLaV4goh27oqRKq3Hl7Chg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jay\\Documents\\LolAPI\\LoLAPI\\LoLAPI\\LoLAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jay\\.nuget\\packages\\mingweisamuel.camille\\2.8.0\\mingweisamuel.camille.2.8.0.nupkg.sha512"
+  ],
+  "logs": []
+}

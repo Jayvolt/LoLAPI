@@ -1,0 +1,16 @@
+C:\Users\Jay\Documents\LolAPI\LoLAPI\LoLAPI\bin\Debug\netcoreapp3.1\LoLAPI.exe
+C:\Users\Jay\Documents\LolAPI\LoLAPI\LoLAPI\bin\Debug\netcoreapp3.1\LoLAPI.deps.json
+C:\Users\Jay\Documents\LolAPI\LoLAPI\LoLAPI\bin\Debug\netcoreapp3.1\LoLAPI.runtimeconfig.json
+C:\Users\Jay\Documents\LolAPI\LoLAPI\LoLAPI\bin\Debug\netcoreapp3.1\LoLAPI.runtimeconfig.dev.json
+C:\Users\Jay\Documents\LolAPI\LoLAPI\LoLAPI\bin\Debug\netcoreapp3.1\LoLAPI.dll
+C:\Users\Jay\Documents\LolAPI\LoLAPI\LoLAPI\bin\Debug\netcoreapp3.1\LoLAPI.pdb
+C:\Users\Jay\Documents\LolAPI\LoLAPI\LoLAPI\bin\Debug\netcoreapp3.1\Camille.dll
+C:\Users\Jay\Documents\LolAPI\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.csproj.AssemblyReference.cache
+C:\Users\Jay\Documents\LolAPI\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jay\Documents\LolAPI\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.AssemblyInfoInputs.cache
+C:\Users\Jay\Documents\LolAPI\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.AssemblyInfo.cs
+C:\Users\Jay\Documents\LolAPI\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.csproj.CoreCompileInputs.cache
+C:\Users\Jay\Documents\LolAPI\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.csproj.CopyComplete
+C:\Users\Jay\Documents\LolAPI\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.dll
+C:\Users\Jay\Documents\LolAPI\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.pdb
+C:\Users\Jay\Documents\LolAPI\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.genruntimeconfig.cache
