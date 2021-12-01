@@ -23,11 +23,11 @@ C:\Users\ja874113\Documents\GitHub\LoLAPI\LoLAPI\bin\Debug\netcoreapp3.1\LoLAPI.
 C:\Users\ja874113\Documents\GitHub\LoLAPI\LoLAPI\bin\Debug\netcoreapp3.1\LoLAPI.pdb
 C:\Users\ja874113\Documents\GitHub\LoLAPI\LoLAPI\bin\Debug\netcoreapp3.1\Camille.dll
 C:\Users\ja874113\Documents\GitHub\LoLAPI\LoLAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\ja874113\Documents\GitHub\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.csprojAssemblyReference.cache
 C:\Users\ja874113\Documents\GitHub\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.csproj.CoreCompileInputs.cache
 C:\Users\ja874113\Documents\GitHub\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.AssemblyInfoInputs.cache
 C:\Users\ja874113\Documents\GitHub\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.AssemblyInfo.cs
-C:\Users\ja874113\Documents\GitHub\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.csproj.CopyComplete
 C:\Users\ja874113\Documents\GitHub\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.dll
 C:\Users\ja874113\Documents\GitHub\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.pdb
 C:\Users\ja874113\Documents\GitHub\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.genruntimeconfig.cache
+C:\Users\ja874113\Documents\GitHub\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.csproj.AssemblyReference.cache
+C:\Users\ja874113\Documents\GitHub\LoLAPI\LoLAPI\obj\Debug\netcoreapp3.1\LoLAPI.GeneratedMSBuildEditorConfig.editorconfig

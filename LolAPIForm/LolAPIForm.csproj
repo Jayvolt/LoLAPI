@@ -7,14 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="MainForm" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="MainForm" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\LoLAPI\LoLAPI.csproj" />
   </ItemGroup>
 
