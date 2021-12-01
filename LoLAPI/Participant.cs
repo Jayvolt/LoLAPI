@@ -6,6 +6,10 @@ namespace LoLAPI
     {
         [JsonProperty(PropertyName = "championName")]
         public string ChampionName { get; private set; }
+        [JsonProperty(PropertyName = "summonerName")]
+        public string SummonerName { get; private set; }
+        [JsonProperty(PropertyName = "summonerLevel")]
+        public int SummonerLevel { get; private set; }
         [JsonProperty(PropertyName = "deaths")]
         public int Deaths { get; private set; }
         [JsonProperty(PropertyName = "kills")]

@@ -38,6 +38,8 @@ namespace LoLAPI
         [JsonProperty(Order = 14)]
         public string TournamentCode { get; private set; }
 
+        public static Team winningTeam;
+        public static Team losingTeam;
         public static void SortParticipantsToTeams(Participant participant)
         {
             foreach (Team team in Teams)
@@ -47,11 +49,16 @@ namespace LoLAPI
                     if (participant.Win == true)
                     {
                         team.TeamMembers.Add(participant);
+                        winningTeam = team;
                     }
                 }
                 else
                 {
-                    team.TeamMembers.Add(participant);
+                    if (participant.Win == false)
+                    {
+                        team.TeamMembers.Add(participant);
+                        losingTeam = team;
+                    }
                 }
             }
         }
