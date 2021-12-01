@@ -74,30 +74,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ja874113\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Jay\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ja874113\\Documents\\GitHub\\LoLAPI\\LoLAPI\\LoLAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Jay\\Documents\\LolAPI\\LoLAPI\\LoLAPI\\LoLAPI.csproj",
       "projectName": "LoLAPI",
-      "projectPath": "C:\\Users\\ja874113\\Documents\\GitHub\\LoLAPI\\LoLAPI\\LoLAPI.csproj",
-      "packagesPath": "C:\\Users\\ja874113\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ja874113\\Documents\\GitHub\\LoLAPI\\LoLAPI\\obj\\",
+      "projectPath": "C:\\Users\\Jay\\Documents\\LolAPI\\LoLAPI\\LoLAPI\\LoLAPI.csproj",
+      "packagesPath": "C:\\Users\\Jay\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jay\\Documents\\LolAPI\\LoLAPI\\LoLAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ja874113\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jay\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -146,7 +141,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
