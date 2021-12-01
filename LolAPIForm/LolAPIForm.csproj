@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MainForm" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="MainForm" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LoLAPI\LoLAPI.csproj" />
+  </ItemGroup>
+
+</Project>

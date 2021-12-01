@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "z5lOJo26URlu0tp9o4QV2JmxjehxSJl/aUVJ/qLOQJfcSBSKGXKMgIkECR0X2+dpCgRnB6OR6eg4QIza247OJg==",
+  "dgSpecHash": "TKQlLOX4PMsvzZl3fcKEseAEOU8W+vc/23wSpemaTNSctJffoAXAQ/kRBJ/drWdOikWqc5iobdCgWvYSMmkAmQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jay\\Documents\\LolAPI\\LoLAPI\\LoLAPI\\LoLAPI.csproj",
+  "projectFilePath": "C:\\Users\\ja874113\\Documents\\GitHub\\LoLAPI\\LoLAPI\\LoLAPI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Jay\\.nuget\\packages\\mingweisamuel.camille\\2.8.0\\mingweisamuel.camille.2.8.0.nupkg.sha512",
-    "C:\\Users\\Jay\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\ja874113\\.nuget\\packages\\mingweisamuel.camille\\2.8.0\\mingweisamuel.camille.2.8.0.nupkg.sha512",
+    "C:\\Users\\ja874113\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }
