@@ -6,6 +6,7 @@ using MingweiSamuel.Camille.Enums;
 using MingweiSamuel.Camille.SummonerV4;
 using LoLAPI;
 using MingweiSamuel.Camille.MatchV5;
+using System;
 
 namespace LoLAPIForm
 {
@@ -79,6 +80,13 @@ namespace LoLAPIForm
                     _matchInfo = (dynamic)JsonConvert.DeserializeObject<MatchInfo>(entry.Value.ToString());
                 }
             }
+            matchNameTextBox.Text = _matchInfo.GameName;
+            matchGameModeTextBox.Text = _matchInfo.GameMode;
+            long gameDuration = _matchInfo.GameDuration;
+            TimeSpan t = TimeSpan.FromSeconds(gameDuration);
+            matchDurationHoursTextBox.Text = string.Format("{0:D2}h", t.Hours);
+            matchDurationMinutesTextBox.Text = string.Format("{0:D2}m", t.Minutes);
+            matchDurationSecondsTextBox.Text = string.Format("{0:D2}s", t.Seconds);
             foreach (Participant participant in _matchInfo.Participants)
             {
                 _matchInfo.SortParticipantsToTeams(participant);
@@ -125,6 +133,11 @@ namespace LoLAPIForm
             losingTeamMemberKills.Text = losingTeamMember.Kill.ToString();
             losingTeamMemberTeamPosition.Text = losingTeamMember.TeamPosition;
             losingTeamMemberDeaths.Text = losingTeamMember.Deaths.ToString();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

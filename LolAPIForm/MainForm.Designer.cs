@@ -42,6 +42,17 @@ namespace LoLAPIForm
             this.summonerNameLabel = new System.Windows.Forms.Label();
             this.launchButton = new System.Windows.Forms.Button();
             this.matchGroupBox = new System.Windows.Forms.GroupBox();
+            this.matchDurationHoursTextBox = new System.Windows.Forms.TextBox();
+            this.matchDurationHoursLabel = new System.Windows.Forms.Label();
+            this.matchDurationSecondsTextBox = new System.Windows.Forms.TextBox();
+            this.matchDurationSecondsLabel = new System.Windows.Forms.Label();
+            this.matchDurationMinutesLabel = new System.Windows.Forms.Label();
+            this.matchDurationMinutesTextBox = new System.Windows.Forms.TextBox();
+            this.matchDurationLabel = new System.Windows.Forms.Label();
+            this.matchGameModeTextBox = new System.Windows.Forms.TextBox();
+            this.matchNameTextBox = new System.Windows.Forms.TextBox();
+            this.matchModeLabel = new System.Windows.Forms.Label();
+            this.matchNameLabel = new System.Windows.Forms.Label();
             this.losingTeamGroupBox = new System.Windows.Forms.GroupBox();
             this.losingTeamMemberDeathsLabel = new System.Windows.Forms.Label();
             this.losingTeamMemberTeamPositionLabel = new System.Windows.Forms.Label();
@@ -200,6 +211,17 @@ namespace LoLAPIForm
             // 
             // matchGroupBox
             // 
+            this.matchGroupBox.Controls.Add(this.matchDurationHoursTextBox);
+            this.matchGroupBox.Controls.Add(this.matchDurationHoursLabel);
+            this.matchGroupBox.Controls.Add(this.matchDurationSecondsTextBox);
+            this.matchGroupBox.Controls.Add(this.matchDurationSecondsLabel);
+            this.matchGroupBox.Controls.Add(this.matchDurationMinutesLabel);
+            this.matchGroupBox.Controls.Add(this.matchDurationMinutesTextBox);
+            this.matchGroupBox.Controls.Add(this.matchDurationLabel);
+            this.matchGroupBox.Controls.Add(this.matchGameModeTextBox);
+            this.matchGroupBox.Controls.Add(this.matchNameTextBox);
+            this.matchGroupBox.Controls.Add(this.matchModeLabel);
+            this.matchGroupBox.Controls.Add(this.matchNameLabel);
             this.matchGroupBox.Controls.Add(this.losingTeamGroupBox);
             this.matchGroupBox.Controls.Add(this.winningTeamGroupBox);
             this.matchGroupBox.Location = new System.Drawing.Point(225, 60);
@@ -208,6 +230,95 @@ namespace LoLAPIForm
             this.matchGroupBox.TabIndex = 8;
             this.matchGroupBox.TabStop = false;
             this.matchGroupBox.Text = "Match Information";
+            // 
+            // matchDurationHoursTextBox
+            // 
+            this.matchDurationHoursTextBox.Location = new System.Drawing.Point(283, 63);
+            this.matchDurationHoursTextBox.Name = "matchDurationHoursTextBox";
+            this.matchDurationHoursTextBox.Size = new System.Drawing.Size(100, 23);
+            this.matchDurationHoursTextBox.TabIndex = 17;
+            // 
+            // matchDurationHoursLabel
+            // 
+            this.matchDurationHoursLabel.AutoSize = true;
+            this.matchDurationHoursLabel.Location = new System.Drawing.Point(283, 45);
+            this.matchDurationHoursLabel.Name = "matchDurationHoursLabel";
+            this.matchDurationHoursLabel.Size = new System.Drawing.Size(39, 15);
+            this.matchDurationHoursLabel.TabIndex = 16;
+            this.matchDurationHoursLabel.Text = "Hours";
+            // 
+            // matchDurationSecondsTextBox
+            // 
+            this.matchDurationSecondsTextBox.Location = new System.Drawing.Point(522, 62);
+            this.matchDurationSecondsTextBox.Name = "matchDurationSecondsTextBox";
+            this.matchDurationSecondsTextBox.Size = new System.Drawing.Size(100, 23);
+            this.matchDurationSecondsTextBox.TabIndex = 15;
+            // 
+            // matchDurationSecondsLabel
+            // 
+            this.matchDurationSecondsLabel.AutoSize = true;
+            this.matchDurationSecondsLabel.Location = new System.Drawing.Point(522, 45);
+            this.matchDurationSecondsLabel.Name = "matchDurationSecondsLabel";
+            this.matchDurationSecondsLabel.Size = new System.Drawing.Size(54, 15);
+            this.matchDurationSecondsLabel.TabIndex = 14;
+            this.matchDurationSecondsLabel.Text = "Seconds:";
+            // 
+            // matchDurationMinutesLabel
+            // 
+            this.matchDurationMinutesLabel.AutoSize = true;
+            this.matchDurationMinutesLabel.Location = new System.Drawing.Point(402, 45);
+            this.matchDurationMinutesLabel.Name = "matchDurationMinutesLabel";
+            this.matchDurationMinutesLabel.Size = new System.Drawing.Size(53, 15);
+            this.matchDurationMinutesLabel.TabIndex = 13;
+            this.matchDurationMinutesLabel.Text = "Minutes:";
+            // 
+            // matchDurationMinutesTextBox
+            // 
+            this.matchDurationMinutesTextBox.Location = new System.Drawing.Point(402, 63);
+            this.matchDurationMinutesTextBox.Name = "matchDurationMinutesTextBox";
+            this.matchDurationMinutesTextBox.Size = new System.Drawing.Size(100, 23);
+            this.matchDurationMinutesTextBox.TabIndex = 12;
+            // 
+            // matchDurationLabel
+            // 
+            this.matchDurationLabel.AutoSize = true;
+            this.matchDurationLabel.Location = new System.Drawing.Point(388, 19);
+            this.matchDurationLabel.Name = "matchDurationLabel";
+            this.matchDurationLabel.Size = new System.Drawing.Size(93, 15);
+            this.matchDurationLabel.TabIndex = 11;
+            this.matchDurationLabel.Text = "Match Duration:";
+            // 
+            // matchGameModeTextBox
+            // 
+            this.matchGameModeTextBox.Location = new System.Drawing.Point(12, 87);
+            this.matchGameModeTextBox.Name = "matchGameModeTextBox";
+            this.matchGameModeTextBox.Size = new System.Drawing.Size(173, 23);
+            this.matchGameModeTextBox.TabIndex = 10;
+            // 
+            // matchNameTextBox
+            // 
+            this.matchNameTextBox.Location = new System.Drawing.Point(12, 37);
+            this.matchNameTextBox.Name = "matchNameTextBox";
+            this.matchNameTextBox.Size = new System.Drawing.Size(173, 23);
+            this.matchNameTextBox.TabIndex = 9;
+            // 
+            // matchModeLabel
+            // 
+            this.matchModeLabel.AutoSize = true;
+            this.matchModeLabel.Location = new System.Drawing.Point(12, 69);
+            this.matchModeLabel.Name = "matchModeLabel";
+            this.matchModeLabel.Size = new System.Drawing.Size(112, 15);
+            this.matchModeLabel.TabIndex = 8;
+            this.matchModeLabel.Text = "Match Game Mode:";
+            // 
+            // matchNameLabel
+            // 
+            this.matchNameLabel.AutoSize = true;
+            this.matchNameLabel.Location = new System.Drawing.Point(12, 19);
+            this.matchNameLabel.Name = "matchNameLabel";
+            this.matchNameLabel.Size = new System.Drawing.Size(79, 15);
+            this.matchNameLabel.TabIndex = 7;
+            this.matchNameLabel.Text = "Match Name:";
             // 
             // losingTeamGroupBox
             // 
@@ -578,10 +689,12 @@ namespace LoLAPIForm
             this.Controls.Add(this.enterSummonerNameTextBox);
             this.Controls.Add(this.enterSummonerNameLabel);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "LeagueofLegends Api";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.summonerInfoGroupBox.ResumeLayout(false);
             this.summonerInfoGroupBox.PerformLayout();
             this.matchGroupBox.ResumeLayout(false);
+            this.matchGroupBox.PerformLayout();
             this.losingTeamGroupBox.ResumeLayout(false);
             this.losingTeamGroupBox.PerformLayout();
             this.winningTeamGroupBox.ResumeLayout(false);
@@ -640,6 +753,17 @@ namespace LoLAPIForm
         private System.Windows.Forms.TextBox losingTeamMemberSummonerName;
         private System.Windows.Forms.Label losingTeamMembersLabel;
         private System.Windows.Forms.ListBox losingTeamListBox;
+        private System.Windows.Forms.TextBox matchDurationSecondsTextBox;
+        private System.Windows.Forms.Label matchDurationSecondsLabel;
+        private System.Windows.Forms.Label matchDurationMinutesLabel;
+        private System.Windows.Forms.TextBox matchDurationMinutesTextBox;
+        private System.Windows.Forms.Label matchDurationLabel;
+        private System.Windows.Forms.TextBox matchGameModeTextBox;
+        private System.Windows.Forms.TextBox matchNameTextBox;
+        private System.Windows.Forms.Label matchModeLabel;
+        private System.Windows.Forms.Label matchNameLabel;
+        private System.Windows.Forms.TextBox matchDurationHoursTextBox;
+        private System.Windows.Forms.Label matchDurationHoursLabel;
     }
 }
 
