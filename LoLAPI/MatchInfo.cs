@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MingweiSamuel.Camille.MatchV5;
 using Newtonsoft.Json;
 
 namespace LoLAPI
@@ -28,7 +29,7 @@ namespace LoLAPI
         [JsonProperty(Order = 9)]
         public int MapID { get; private set; }
         [JsonProperty(Order = 10)]
-        public static List<Participant> Participants { get; private set; }
+        public List<Participant> Participants { get; private set; }
         [JsonProperty(Order = 11)]
         public string PlatformID { get; private set; }
         [JsonProperty(Order = 12)]
@@ -38,9 +39,9 @@ namespace LoLAPI
         [JsonProperty(Order = 14)]
         public string TournamentCode { get; private set; }
 
-        public static Team winningTeam;
-        public static Team losingTeam;
-        public static void SortParticipantsToTeams(Participant participant)
+        public Team winningTeam;
+        public Team losingTeam;
+        public void SortParticipantsToTeams(Participant participant)
         {
             foreach (Team team in Teams)
             {
