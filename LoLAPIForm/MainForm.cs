@@ -20,7 +20,6 @@ namespace LoLAPIForm
         private MatchInfo _matchInfo;
 
 
-        private int totalKills;
         private string enteredSummonerName;
         private Summoner summoner;
 
@@ -50,16 +49,16 @@ namespace LoLAPIForm
             riotApi = RiotApi.NewInstance(enteredAPIKey);
             summoner = riotApi.SummonerV4.GetBySummonerName(MingweiSamuel.Camille.Enums.Region.NA, enteredSummonerName);
 
+            summonerNameTextBox.Enabled = true;
             summonerNameTextBox.Text = summoner.Name;
+            summonerLevelTextBox.Enabled = true;
             summonerLevelTextBox.Text = summoner.SummonerLevel.ToString();
 
+            summonerMatchesListBox.Enabled = true;
             var matches = riotApi.MatchV5.GetMatchIdsByPUUID(MingweiSamuel.Camille.Enums.Region.Americas, summoner.Puuid);
-
             foreach (var match in matches)
             {
-                Match currentMatch = riotApi.MatchV5.GetMatch(MingweiSamuel.Camille.Enums.Region.Americas, match);
-                Game.Matches.Add(currentMatch);
-                summonerMatchesListBox.Items.Add(currentMatch);
+                summonerMatchesListBox.Items.Add(match);
             }
         }
 
@@ -71,8 +70,7 @@ namespace LoLAPIForm
         }
         void GetMatchInformation()
         {
-            selectedMatch = (Match)summonerMatchesListBox.SelectedItem;
-            //selectedMatch = riotApi.MatchV5.GetMatch(MingweiSamuel.Camille.Enums.Region.Americas, summonerMatchesListBox.Text);
+            selectedMatch = riotApi.MatchV5.GetMatch(MingweiSamuel.Camille.Enums.Region.Americas, (string)summonerMatchesListBox.SelectedItem);
             foreach (KeyValuePair<string, object> entry in selectedMatch._AdditionalProperties)
             {
                 if (entry.Key == "info")
@@ -80,23 +78,30 @@ namespace LoLAPIForm
                     _matchInfo = (dynamic)JsonConvert.DeserializeObject<MatchInfo>(entry.Value.ToString());
                 }
             }
+            matchNameTextBox.Enabled = true;
             matchNameTextBox.Text = _matchInfo.GameName;
+            matchGameModeTextBox.Enabled = true;
             matchGameModeTextBox.Text = _matchInfo.GameMode;
+
             long gameDuration = _matchInfo.GameDuration;
             TimeSpan t = TimeSpan.FromSeconds(gameDuration);
+            matchDurationHoursTextBox.Enabled = true;
             matchDurationHoursTextBox.Text = string.Format("{0:D2}h", t.Hours);
+            matchDurationMinutesTextBox.Enabled = true;
             matchDurationMinutesTextBox.Text = string.Format("{0:D2}m", t.Minutes);
+            matchDurationSecondsTextBox.Enabled = true;
             matchDurationSecondsTextBox.Text = string.Format("{0:D2}s", t.Seconds);
+
             foreach (Participant participant in _matchInfo.Participants)
             {
                 _matchInfo.SortParticipantsToTeams(participant);
-                totalKills += participant.Kill;
             }
-
+            winningTeamListBox.Enabled = true;
             foreach (Participant winningTeamMember in _matchInfo.winningTeam.TeamMembers)
             {
                 winningTeamListBox.Items.Add(winningTeamMember);
             }
+            losingTeamListBox.Enabled = true;
             foreach (Participant losingTeamMember in _matchInfo.losingTeam.TeamMembers)
             {
                 losingTeamListBox.Items.Add(losingTeamMember);
@@ -110,12 +115,19 @@ namespace LoLAPIForm
         void DisplayWinningTeamMemberInformation()
         {
             var winningTeamMember = (Participant)winningTeamListBox.SelectedItem;
+            winningTeamMemberSummonerName.Enabled = true;
             winningTeamMemberSummonerName.Text = winningTeamMember.SummonerName;
+            winningTeamMemberSummonerLevel.Enabled = true;
             winningTeamMemberSummonerLevel.Text = winningTeamMember.SummonerLevel.ToString();
+            winningTeamMemberChampionName.Enabled = true;
             winningTeamMemberChampionName.Text = winningTeamMember.ChampionName;
+            winningTeamMemberTotalDamageDealt.Enabled = true;
             winningTeamMemberTotalDamageDealt.Text = winningTeamMember.TotalDamageDealt.ToString();
+            winningTeamMemberKills.Enabled = true;
             winningTeamMemberKills.Text = winningTeamMember.Kill.ToString();
+            winningTeamMemberTeamPosition.Enabled = true;
             winningTeamMemberTeamPosition.Text = winningTeamMember.TeamPosition;
+            winningTeamMemberDeaths.Enabled = true;
             winningTeamMemberDeaths.Text = winningTeamMember.Deaths.ToString();
         }
 
@@ -126,12 +138,19 @@ namespace LoLAPIForm
         void DisplayLosingTeamMemberInformation()
         {
             var losingTeamMember = (Participant)losingTeamListBox.SelectedItem;
+            losingTeamMemberSummonerName.Enabled = true;
             losingTeamMemberSummonerName.Text = losingTeamMember.SummonerName;
+            losingTeamMemberSummonerLevel.Enabled = true;
             losingTeamMemberSummonerLevel.Text = losingTeamMember.SummonerLevel.ToString();
+            losingTeamMemberChampionName.Enabled = true;
             losingTeamMemberChampionName.Text = losingTeamMember.ChampionName;
+            losingTeamMemberTotalDamageDealt.Enabled = true;
             losingTeamMemberTotalDamageDealt.Text = losingTeamMember.TotalDamageDealt.ToString();
+            losingTeamMemberKills.Enabled = true;
             losingTeamMemberKills.Text = losingTeamMember.Kill.ToString();
+            losingTeamMemberTeamPosition.Enabled = true;
             losingTeamMemberTeamPosition.Text = losingTeamMember.TeamPosition;
+            losingTeamMemberDeaths.Enabled = true;
             losingTeamMemberDeaths.Text = losingTeamMember.Deaths.ToString();
         }
 

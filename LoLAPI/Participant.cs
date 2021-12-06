@@ -21,5 +21,6 @@ namespace LoLAPI
         [JsonProperty(PropertyName = "win")]
         public bool Win { get; private set; }
 
+        public override string ToString() => SummonerName;
     }
 }

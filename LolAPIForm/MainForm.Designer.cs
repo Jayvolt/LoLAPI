@@ -144,6 +144,7 @@ namespace LoLAPIForm
             // 
             // summonerMatchesListBox
             // 
+            this.summonerMatchesListBox.Enabled = false;
             this.summonerMatchesListBox.FormattingEnabled = true;
             this.summonerMatchesListBox.ItemHeight = 15;
             this.summonerMatchesListBox.Location = new System.Drawing.Point(7, 142);
@@ -165,6 +166,7 @@ namespace LoLAPIForm
             // 
             this.summonerLevelTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.summonerLevelTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.summonerLevelTextBox.Enabled = false;
             this.summonerLevelTextBox.Location = new System.Drawing.Point(6, 87);
             this.summonerLevelTextBox.Name = "summonerLevelTextBox";
             this.summonerLevelTextBox.ReadOnly = true;
@@ -175,6 +177,7 @@ namespace LoLAPIForm
             // 
             this.summonerNameTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.summonerNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.summonerNameTextBox.Enabled = false;
             this.summonerNameTextBox.Location = new System.Drawing.Point(6, 37);
             this.summonerNameTextBox.Name = "summonerNameTextBox";
             this.summonerNameTextBox.ReadOnly = true;
@@ -233,8 +236,10 @@ namespace LoLAPIForm
             // 
             // matchDurationHoursTextBox
             // 
+            this.matchDurationHoursTextBox.Enabled = false;
             this.matchDurationHoursTextBox.Location = new System.Drawing.Point(283, 63);
             this.matchDurationHoursTextBox.Name = "matchDurationHoursTextBox";
+            this.matchDurationHoursTextBox.ReadOnly = true;
             this.matchDurationHoursTextBox.Size = new System.Drawing.Size(100, 23);
             this.matchDurationHoursTextBox.TabIndex = 17;
             // 
@@ -249,8 +254,10 @@ namespace LoLAPIForm
             // 
             // matchDurationSecondsTextBox
             // 
+            this.matchDurationSecondsTextBox.Enabled = false;
             this.matchDurationSecondsTextBox.Location = new System.Drawing.Point(522, 62);
             this.matchDurationSecondsTextBox.Name = "matchDurationSecondsTextBox";
+            this.matchDurationSecondsTextBox.ReadOnly = true;
             this.matchDurationSecondsTextBox.Size = new System.Drawing.Size(100, 23);
             this.matchDurationSecondsTextBox.TabIndex = 15;
             // 
@@ -274,8 +281,10 @@ namespace LoLAPIForm
             // 
             // matchDurationMinutesTextBox
             // 
+            this.matchDurationMinutesTextBox.Enabled = false;
             this.matchDurationMinutesTextBox.Location = new System.Drawing.Point(402, 63);
             this.matchDurationMinutesTextBox.Name = "matchDurationMinutesTextBox";
+            this.matchDurationMinutesTextBox.ReadOnly = true;
             this.matchDurationMinutesTextBox.Size = new System.Drawing.Size(100, 23);
             this.matchDurationMinutesTextBox.TabIndex = 12;
             // 
@@ -290,15 +299,19 @@ namespace LoLAPIForm
             // 
             // matchGameModeTextBox
             // 
+            this.matchGameModeTextBox.Enabled = false;
             this.matchGameModeTextBox.Location = new System.Drawing.Point(12, 87);
             this.matchGameModeTextBox.Name = "matchGameModeTextBox";
+            this.matchGameModeTextBox.ReadOnly = true;
             this.matchGameModeTextBox.Size = new System.Drawing.Size(173, 23);
             this.matchGameModeTextBox.TabIndex = 10;
             // 
             // matchNameTextBox
             // 
+            this.matchNameTextBox.Enabled = false;
             this.matchNameTextBox.Location = new System.Drawing.Point(12, 37);
             this.matchNameTextBox.Name = "matchNameTextBox";
+            this.matchNameTextBox.ReadOnly = true;
             this.matchNameTextBox.Size = new System.Drawing.Size(173, 23);
             this.matchNameTextBox.TabIndex = 9;
             // 
@@ -413,6 +426,7 @@ namespace LoLAPIForm
             // 
             this.losingTeamMemberTeamPosition.BackColor = System.Drawing.SystemColors.Window;
             this.losingTeamMemberTeamPosition.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.losingTeamMemberTeamPosition.Enabled = false;
             this.losingTeamMemberTeamPosition.Location = new System.Drawing.Point(6, 251);
             this.losingTeamMemberTeamPosition.Name = "losingTeamMemberTeamPosition";
             this.losingTeamMemberTeamPosition.ReadOnly = true;
@@ -423,6 +437,7 @@ namespace LoLAPIForm
             // 
             this.losingTeamMemberDeaths.BackColor = System.Drawing.SystemColors.Window;
             this.losingTeamMemberDeaths.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.losingTeamMemberDeaths.Enabled = false;
             this.losingTeamMemberDeaths.Location = new System.Drawing.Point(185, 251);
             this.losingTeamMemberDeaths.Name = "losingTeamMemberDeaths";
             this.losingTeamMemberDeaths.ReadOnly = true;
@@ -433,6 +448,7 @@ namespace LoLAPIForm
             // 
             this.losingTeamMemberKills.BackColor = System.Drawing.SystemColors.Window;
             this.losingTeamMemberKills.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.losingTeamMemberKills.Enabled = false;
             this.losingTeamMemberKills.Location = new System.Drawing.Point(185, 207);
             this.losingTeamMemberKills.Name = "losingTeamMemberKills";
             this.losingTeamMemberKills.ReadOnly = true;
@@ -443,6 +459,7 @@ namespace LoLAPIForm
             // 
             this.losingTeamMemberTotalDamageDealt.BackColor = System.Drawing.SystemColors.Window;
             this.losingTeamMemberTotalDamageDealt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.losingTeamMemberTotalDamageDealt.Enabled = false;
             this.losingTeamMemberTotalDamageDealt.Location = new System.Drawing.Point(6, 207);
             this.losingTeamMemberTotalDamageDealt.Name = "losingTeamMemberTotalDamageDealt";
             this.losingTeamMemberTotalDamageDealt.ReadOnly = true;
@@ -453,6 +470,7 @@ namespace LoLAPIForm
             // 
             this.losingTeamMemberChampionName.BackColor = System.Drawing.SystemColors.Window;
             this.losingTeamMemberChampionName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.losingTeamMemberChampionName.Enabled = false;
             this.losingTeamMemberChampionName.Location = new System.Drawing.Point(6, 163);
             this.losingTeamMemberChampionName.Name = "losingTeamMemberChampionName";
             this.losingTeamMemberChampionName.ReadOnly = true;
@@ -463,6 +481,7 @@ namespace LoLAPIForm
             // 
             this.losingTeamMemberSummonerLevel.BackColor = System.Drawing.SystemColors.Window;
             this.losingTeamMemberSummonerLevel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.losingTeamMemberSummonerLevel.Enabled = false;
             this.losingTeamMemberSummonerLevel.Location = new System.Drawing.Point(185, 103);
             this.losingTeamMemberSummonerLevel.Name = "losingTeamMemberSummonerLevel";
             this.losingTeamMemberSummonerLevel.ReadOnly = true;
@@ -473,6 +492,7 @@ namespace LoLAPIForm
             // 
             this.losingTeamMemberSummonerName.BackColor = System.Drawing.SystemColors.Window;
             this.losingTeamMemberSummonerName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.losingTeamMemberSummonerName.Enabled = false;
             this.losingTeamMemberSummonerName.Location = new System.Drawing.Point(185, 59);
             this.losingTeamMemberSummonerName.Name = "losingTeamMemberSummonerName";
             this.losingTeamMemberSummonerName.ReadOnly = true;
@@ -490,6 +510,7 @@ namespace LoLAPIForm
             // 
             // losingTeamListBox
             // 
+            this.losingTeamListBox.Enabled = false;
             this.losingTeamListBox.FormattingEnabled = true;
             this.losingTeamListBox.ItemHeight = 15;
             this.losingTeamListBox.Location = new System.Drawing.Point(6, 44);
@@ -591,6 +612,7 @@ namespace LoLAPIForm
             // 
             this.winningTeamMemberTeamPosition.BackColor = System.Drawing.SystemColors.Window;
             this.winningTeamMemberTeamPosition.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.winningTeamMemberTeamPosition.Enabled = false;
             this.winningTeamMemberTeamPosition.Location = new System.Drawing.Point(6, 251);
             this.winningTeamMemberTeamPosition.Name = "winningTeamMemberTeamPosition";
             this.winningTeamMemberTeamPosition.ReadOnly = true;
@@ -601,6 +623,7 @@ namespace LoLAPIForm
             // 
             this.winningTeamMemberDeaths.BackColor = System.Drawing.SystemColors.Window;
             this.winningTeamMemberDeaths.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.winningTeamMemberDeaths.Enabled = false;
             this.winningTeamMemberDeaths.Location = new System.Drawing.Point(185, 251);
             this.winningTeamMemberDeaths.Name = "winningTeamMemberDeaths";
             this.winningTeamMemberDeaths.ReadOnly = true;
@@ -611,6 +634,7 @@ namespace LoLAPIForm
             // 
             this.winningTeamMemberKills.BackColor = System.Drawing.SystemColors.Window;
             this.winningTeamMemberKills.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.winningTeamMemberKills.Enabled = false;
             this.winningTeamMemberKills.Location = new System.Drawing.Point(185, 207);
             this.winningTeamMemberKills.Name = "winningTeamMemberKills";
             this.winningTeamMemberKills.ReadOnly = true;
@@ -621,6 +645,7 @@ namespace LoLAPIForm
             // 
             this.winningTeamMemberTotalDamageDealt.BackColor = System.Drawing.SystemColors.Window;
             this.winningTeamMemberTotalDamageDealt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.winningTeamMemberTotalDamageDealt.Enabled = false;
             this.winningTeamMemberTotalDamageDealt.Location = new System.Drawing.Point(6, 207);
             this.winningTeamMemberTotalDamageDealt.Name = "winningTeamMemberTotalDamageDealt";
             this.winningTeamMemberTotalDamageDealt.ReadOnly = true;
@@ -631,6 +656,7 @@ namespace LoLAPIForm
             // 
             this.winningTeamMemberChampionName.BackColor = System.Drawing.SystemColors.Window;
             this.winningTeamMemberChampionName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.winningTeamMemberChampionName.Enabled = false;
             this.winningTeamMemberChampionName.Location = new System.Drawing.Point(6, 163);
             this.winningTeamMemberChampionName.Name = "winningTeamMemberChampionName";
             this.winningTeamMemberChampionName.ReadOnly = true;
@@ -641,6 +667,7 @@ namespace LoLAPIForm
             // 
             this.winningTeamMemberSummonerLevel.BackColor = System.Drawing.SystemColors.Window;
             this.winningTeamMemberSummonerLevel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.winningTeamMemberSummonerLevel.Enabled = false;
             this.winningTeamMemberSummonerLevel.Location = new System.Drawing.Point(185, 103);
             this.winningTeamMemberSummonerLevel.Name = "winningTeamMemberSummonerLevel";
             this.winningTeamMemberSummonerLevel.ReadOnly = true;
@@ -651,6 +678,7 @@ namespace LoLAPIForm
             // 
             this.winningTeamMemberSummonerName.BackColor = System.Drawing.SystemColors.Window;
             this.winningTeamMemberSummonerName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.winningTeamMemberSummonerName.Enabled = false;
             this.winningTeamMemberSummonerName.Location = new System.Drawing.Point(185, 59);
             this.winningTeamMemberSummonerName.Name = "winningTeamMemberSummonerName";
             this.winningTeamMemberSummonerName.ReadOnly = true;
@@ -668,6 +696,7 @@ namespace LoLAPIForm
             // 
             // winningTeamListBox
             // 
+            this.winningTeamListBox.Enabled = false;
             this.winningTeamListBox.FormattingEnabled = true;
             this.winningTeamListBox.ItemHeight = 15;
             this.winningTeamListBox.Location = new System.Drawing.Point(6, 44);
